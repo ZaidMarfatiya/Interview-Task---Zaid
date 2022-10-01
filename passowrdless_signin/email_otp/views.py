@@ -67,7 +67,10 @@ class OTPVerifyView(APIView):
         except Exception as e:
             return Response(str(e), status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-
+def add(a, b):
+    sum = a + b
+    return sum
+        
 class UserInfo(APIView):
     permission_classes = [IsAuthenticated]
 
