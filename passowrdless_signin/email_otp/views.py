@@ -70,6 +70,10 @@ class OTPVerifyView(APIView):
 def add(a, b):
     sum = a + b
     return sum
+
+def sub(a, b):
+    s = a - b
+    return s
         
 class UserInfo(APIView):
     permission_classes = [IsAuthenticated]
