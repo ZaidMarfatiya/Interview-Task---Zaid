@@ -74,6 +74,10 @@ def add(a, b):
 def sub(a, b):
     s = a - b
     return s
+
+def mul(a, b):
+    m = a * b
+    return m
         
 class UserInfo(APIView):
     permission_classes = [IsAuthenticated]
